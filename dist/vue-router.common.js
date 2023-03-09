@@ -2364,7 +2364,7 @@ History.prototype.confirmTransition = function confirmTransition (route, onCompl
       hook(route, current, function (to) {
         if (to === false) {
           // next(false) -> abort navigation, ensure current URL
-          this$1$1.ensureURL(true);
+          // this$1$1.ensureURL(true);
           abort(createNavigationAbortedError(current, route));
         } else if (isError(to)) {
           this$1$1.ensureURL(true);

@@ -196,7 +196,7 @@ export class History {
         hook(route, current, (to: any) => {
           if (to === false) {
             // next(false) -> abort navigation, ensure current URL
-            this.ensureURL(true)
+            // this.ensureURL(true)
             abort(createNavigationAbortedError(current, route))
           } else if (isError(to)) {
             this.ensureURL(true)
